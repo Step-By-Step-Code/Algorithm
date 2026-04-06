@@ -12,6 +12,7 @@ int main() {
     for(int i=0; i < input_1 ;i++){
         cin >> v[i];
         result += (static_cast<unsigned long long>(v[i] -'a' + 1) * static_cast<unsigned long long>(pow(31, i))) % 1234567891;
+        result = result  % 1234567891;
     }
     
     cout << result << endl;
